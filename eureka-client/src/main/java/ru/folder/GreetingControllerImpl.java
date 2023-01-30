@@ -10,8 +10,13 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class GreetingControllerImpl implements GreetingController {
 
-    @Lazy
     private EurekaClient eurekaClient;
+
+    @Autowired
+    @Lazy
+    public void setEurekaClient(EurekaClient eurekaClient) {
+        this.eurekaClient = eurekaClient;
+    }
 
     @Value("${spring.application.name}")
     private String appName;

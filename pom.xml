@@ -6,6 +6,8 @@
 
     <modules>
         <module>eureka-service</module>
+        <module>eureka-client</module>
+        <module>eureka-feign-client</module>
     </modules>
 
     <parent>
