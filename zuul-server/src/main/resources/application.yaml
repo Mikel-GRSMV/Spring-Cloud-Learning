@@ -15,7 +15,7 @@ eureka:
       defaultZone: http://localhost:7771/eureka/
 zuul:
   routes:
-    geek-spring-cloud-eureka-client: /gclient/**
+    test-spring-cloud-eureka-client: /gclient/**
   sensitiveHeaders: Cookie, Set-Cookie
 ribbon:
   ReadTimeout: 60000
